@@ -53,14 +53,16 @@
         <div id="outfit-description">
             
         </div>
+        <!-- 'Link' : ' { "1": "url1", "2" : "url2" } '
+-->
         
         <div class="information-heads-up">
             <div id="calendar"></div>
             <script type="text/javascript">
                 var events = [
-                  {'Date': new Date(2018, 3, 19), 'Title': 'Light, Casual' , 'Link': 'https://cmsstatic.bucklecontent.com/cmsstatic/m_TilSunrise3-1.jpg'},
-                  {'Date': new Date(2018, 3, 20), 'Title': 'Light, Impress', 'Link': 'https://cmsstatic.bucklecontent.com/cmsstatic/m_BestBrandsForSpringNo.2.jpg'},
-                  {'Date': new Date(2018, 3, 21), 'Title': 'Dark, Impress', 'Link': 'https://i.pinimg.com/736x/9b/1e/c0/9b1ec02a904a7e5535c4972681217e52--blazer-jeans-jacket-jeans.jpg'},
+                  {'Date': new Date(2018, 3, 19), 'Title': 'Light, Casual' , 'Link': ' { "1": "https://cmsstatic.bucklecontent.com/cmsstatic/m_TilSunrise3-1.jpg","2": "https://i.pinimg.com/236x/19/07/a5/1907a5342b8509eeeab3739ea496424f--light-blue-ripped-jeans-men-ripped-jeans.jpg"}' },
+                  {'Date': new Date(2018, 3, 20), 'Title': 'Light, Impress', 'Link': '{ "1": "https://cmsstatic.bucklecontent.com/cmsstatic/m_BestBrandsForSpringNo.2.jpg", "2": "https://i.pinimg.com/originals/e4/72/af/e472afc171b1fc7c9eee21890d747762.jpg"}' },
+                  {'Date': new Date(2018, 3, 21), 'Title': 'Dark, Impress', 'Link': ' { "1": "https://i.pinimg.com/736x/9b/1e/c0/9b1ec02a904a7e5535c4972681217e52--blazer-jeans-jacket-jeans.jpg", "2" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjZoYFK7UZ_AFtFIiLY4hQPZVO1R37byhqchxxvTT6jwln0tn-" } '   },
                 ];
                 var settings = {
                     EventClick: getOutfit

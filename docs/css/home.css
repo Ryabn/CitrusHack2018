@@ -127,6 +127,10 @@ body{
 }
 #outfit-description{
     background-color: rgba(35, 38, 43, 0.7);
+    background-image: url('http://www.lesprivatgc.com/images/product/M-DI622D022-N11_4244.jpg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
     position: fixed;
     border: 5px solid white;
     left: 70vw;

@@ -52,8 +52,14 @@ function displayWeather(){
 
 
 function getOutfit(text){
-     var url = "url('" + text + "')"
-    document.getElementById('outfit-display').style.backgroundImage = url;
+    text = JSON.parse(text);
+     var url1 = "url('" + text['1'] + "')";
+     var url2 = "url('" + text['2'] + "')";
+
+    document.getElementById('outfit-display').style.backgroundImage = url1;  
+    document.getElementById('outfit-description').style.backgroundImage = url2;
+       
+
 }
 
 function getLocation(){
