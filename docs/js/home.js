@@ -19,7 +19,7 @@ function apiCall(url, returnFunction){
 
 function weatherInfo(){
     var apiKey = '490a6699d3550adf6d9465b4a0e50162';
-    var apiUrl = 'http://api.openweathermap.org/data/2.5/weather?lat=' + latitude + '&lon=' + longitude + '&appid=' + apiKey;
+    var apiUrl = 'https://api.openweathermap.org/data/2.5/weather?lat=' + latitude + '&lon=' + longitude + '&appid=' + apiKey;
     
     apiCall(apiUrl, extractWeatherData);
 }
