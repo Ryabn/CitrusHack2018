@@ -114,7 +114,7 @@ body{
 #outfit-display{
     background-color: rgba(35, 38, 43, 0.7);
     background-image: url('https://cmsstatic.bucklecontent.com/cmsstatic/m_TilSunrise2.jpg');
-    background-size: contain;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     position: fixed;
@@ -128,7 +128,7 @@ body{
 #outfit-description{
     background-color: rgba(35, 38, 43, 0.7);
     background-image: url('http://www.lesprivatgc.com/images/product/M-DI622D022-N11_4244.jpg');
-    background-size: contain;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     position: fixed;
