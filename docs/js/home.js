@@ -19,8 +19,6 @@ function apiCall(url, returnFunction){
 
 function weatherInfo(){
     var apiKey = '490a6699d3550adf6d9465b4a0e50162';
-    var zipCode = '91007';
-    //var apiUrl = 'http://api.openweathermap.org/data/2.5/weather?zip=' + zipCode + ',us&appid=' + apiKey;
     var apiUrl = 'http://api.openweathermap.org/data/2.5/weather?lat=' + latitude + '&lon=' + longitude + '&appid=' + apiKey;
     
     apiCall(apiUrl, extractWeatherData);
@@ -41,7 +39,6 @@ function kelvinToFahrenheit(kelvin){
 }
 
 function displayWeather(){
-    //document.getElementById('weather-display').insertAdjacentHTML('beforeend', weatherData);
     document.getElementById('temperature').innerHTML = parseInt(temp);
     document.getElementById('temperature-information-desc').innerHTML = 'Location: ' + place 
         + '<br><br>Weather: ' + weather 
@@ -49,6 +46,14 @@ function displayWeather(){
     setTimeout(function(){
         document.getElementById('loading-wrapper').style.display = 'none';
     }, 1000);
+}
+
+
+
+
+function getOutfit(text){
+     var url = "url('" + text + "')"
+    document.getElementById('outfit-display').style.backgroundImage = url;
 }
 
 function getLocation(){

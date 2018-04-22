@@ -8,11 +8,13 @@
         </title>
         
         <link href="https://fonts.googleapis.com/css?family=Tajawal" rel="stylesheet"> 
+        <link rel="stylesheet" href="css/theme2.css"/>
         
         <link rel="stylesheet" type="text/css" href="css/home.css" />
         <script src="js/home.js"></script>
+        <script type="text/javascript" src="js/caleandar.js"></script>
     </head>
-    <body onload="load();">
+    <body onload="load(); createCalendar();">
         
         <div id="loading-wrapper">
             <div class="loading">
@@ -44,11 +46,28 @@
         <div class="outfit-title">
             <h1 id="title"> Are you feeling ... this?</h1>
         </div>
-        <div class="outfit-display">
+        <div id="outfit-display">
             
         </div>
-        <div class="information-heads-up">
         
+        <div id="outfit-description">
+            
+        </div>
+        
+        <div class="information-heads-up">
+            <div id="calendar"></div>
+            <script type="text/javascript">
+                var events = [
+                  {'Date': new Date(2018, 3, 19), 'Title': 'Light, Casual' , 'Link': 'https://cmsstatic.bucklecontent.com/cmsstatic/m_TilSunrise3-1.jpg'},
+                  {'Date': new Date(2018, 3, 20), 'Title': 'Light, Impress', 'Link': 'https://cmsstatic.bucklecontent.com/cmsstatic/m_BestBrandsForSpringNo.2.jpg'},
+                  {'Date': new Date(2018, 3, 21), 'Title': 'Dark, Impress', 'Link': 'https://i.pinimg.com/736x/9b/1e/c0/9b1ec02a904a7e5535c4972681217e52--blazer-jeans-jacket-jeans.jpg'},
+                ];
+                var settings = {
+                    EventClick: getOutfit
+                };
+                var element = document.getElementById('calendar');
+                caleandar(element, events, settings);
+            </script>
         </div>
 
     </body>
