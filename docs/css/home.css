@@ -142,7 +142,7 @@ body{
 .information-heads-up{
     background-color: rgba(35, 38, 43, 0.7);
     position: fixed;
-    border: 5px solid #14ff7a;
+    border: 5px solid #19d1ff;
     top: calc( 30vh + 30px );
     height: calc( 70vh - 50px );
     width: 40vw;
