@@ -36,6 +36,7 @@ h4,
 h5,
 h6 {
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+
 }
 
 .bg-primary {
@@ -52,7 +53,9 @@ h6 {
 }
 
 section {
-  padding: 8rem 0;
+   padding: 8rem;
+   height:100vh;
+  
 }
 
 .section-heading {
@@ -294,6 +297,13 @@ header.masthead p {
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
 }
 
+.invisible {
+  padding: 16px;
+
+    background: transparent;
+    border: none !important;
+    font-size:0;
+}
 .btn-xl {
   padding: 1rem 2rem;
 }

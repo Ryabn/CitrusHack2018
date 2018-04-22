@@ -2,6 +2,9 @@
   "use strict"; // Start of use strict
   //Female on click
   var gender;
+  var shade;
+  var fit;
+  var accessories;
   $('#female').click(function() {
     gender = true; //female
   });
@@ -10,6 +13,30 @@
   $('#male').click(function()   {
     gender = false; //male
   });
+
+  //Lighter shade on click
+  $('#light').click(function()   {
+    shade = true; //light
+  });
+  //Darker shade on click
+  $('#dark').click(function()   {
+    shade = false; //dark
+  });
+  $('#casual').click(function()   {
+    fit = "casual";
+  });
+  $('#dressToImpress').click(function()   {
+    fit = "dressToImpress"; 
+  });
+  $('#formal').click(function()   {
+    fit = "formal"; 
+  });
+  $('#yesAccessories').click(function()   {
+    accessories = true;
+  });
+  $('#noAccessories').click(function()   {
+    accessories = false;
+  });
   // Smooth scrolling using jQuery easing
   $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
@@ -17,7 +44,7 @@
       target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
       if (target.length) {
         $('html, body').animate({
-          scrollTop: (target.offset().top - 57)
+          scrollTop: (target.offset().top)
         }, 1000, "easeInOutExpo");
         return false;
       }
