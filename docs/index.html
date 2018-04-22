@@ -1,46 +1,91 @@
 <!DOCTYPE html>
-
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>
-            Day fit or weather fit tho (still up for debate)
-        </title>
-        
-        <link href="https://fonts.googleapis.com/css?family=Tajawal" rel="stylesheet"> 
-        
-        <link rel="stylesheet" type="text/css" href="css/style.css" />
-        <script src="js/script.js"></script>
-    </head>
-    <body onload="load();">
-        
-        <div class="temperature-heads-up">
-            <div id="weather-display">
-                <h2 id="temperature">-.-</h2>
-                <p class="temperature-details">ºF</p>
-            </div>
-            <div class="temperature-information">
-                <p id="temperature-information-desc">
-                    Location: null
-                    <br>
-                    <br>
-                    Weather: null
-                    <br>
-                    <br>
-                    Wind Speed: null
-                </p>
-            </div>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>WeatherFitTho</title>
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+    <link href="css/creative.css" rel="stylesheet">
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+    <script src="js/creative.js"></script>
+  </head>
+  <body id="page-top">
+    <header class="masthead text-center text-white d-flex">
+      <div class="container my-auto">
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+            <h1 class="textxf">
+              <strong>WeatherFitTho</strong>
+            </h1>
+            <hr>
+          </div>
+          <div class="col-lg-8 mx-auto">
+            <p class="text-faded mb-5 subtitle">Get a new outfit of the day tailored towards your style and the weather everyday, no strings attached!</p>
+            <a class="btn btn-primary btn-xl js-scroll-trigger" href="#quiz">Hook Me Up!</a>
+          </div>
         </div>
-        
-        <div class="outfit-title">
-            <h1 id="title"> Are you feeling ... this?</h1>
+      </div>
+    </header>
+    <section class="bg-primary" id="quiz">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+            <h2 class="section-heading text-white">Let's get some more information about you!</h2>
+            <hr class="light my-4">
+            <p class="text-faded mb-4">What is your gender?</p>
+            <a class="btn btn-light btn-xl js-scroll-trigger" id="male" href="#quiz2">Male</a>
+            <button class="invisible"> jkjkk</button>
+            <a class="btn btn-light btn-xl js-scroll-trigger" id="female" href="#quiz2">Female</a>
+          </div>
         </div>
-        <div class="outfit-display">
-            
+      </div>
+    </section>
+    <section id="quiz2">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading">Are you feeling...</h2>
+            <a class="btn btn-primary btn-xl js-scroll-trigger" id="light" href="#quiz3">Lighter Shades</a>
+                <button class="invisible"> jkjkk</button>
+            <a class="btn btn-primary btn-xl js-scroll-trigger" id="dark" href="#quiz3">Darker Shades</a>
+            <hr class="my-4">
+          </div>
         </div>
-        <div class="information-heads-up">
-        
+      </div>
+    </section>
+      <section class="bg-primary" id="quiz3">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+            <h2 class="section-heading text-white">What's your fit?</h2>
+            <hr class="light my-4">
+            <a class="btn btn-light btn-xl js-scroll-trigger" id="casual" href="#quiz4">Dress Me Casual</a>
+                <button class="invisible"> jkjkk</button>
+            <a class="btn btn-light btn-xl js-scroll-trigger" id="dressToImpress" href="#quiz4">Dress to Impress</a>
+          </div>
         </div>
-
-    </body>
+      </div>
+    </section>
+    <section id="quiz4">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading">Are you feeling accessories?</h2>
+            <a class="btn btn-primary btn-xl js-scroll-trigger" id="yesAccessories" onclick="submit();">Yes</a>
+                <button class="invisible"> jkjkk</button>
+            <a class="btn btn-primary btn-xl js-scroll-trigger" id="noAccessories" onclick="submit();">No</a>
+            <hr class="my-4">
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>

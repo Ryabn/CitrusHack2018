@@ -46,6 +46,9 @@ function displayWeather(){
     document.getElementById('temperature-information-desc').innerHTML = 'Location: ' + place 
         + '<br><br>Weather: ' + weather 
         + '<br><br>Wind Speed: ' + wind + 'mph';
+    setTimeout(function(){
+        document.getElementById('loading-wrapper').style.display = 'none';
+    }, 1000);
 }
 
 function getLocation(){

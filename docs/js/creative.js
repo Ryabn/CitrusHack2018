@@ -109,3 +109,8 @@
   });
 
 })(jQuery); // End of use strict
+
+
+function submit(){
+    window.location = 'home.html';
+}
