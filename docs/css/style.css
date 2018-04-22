@@ -1,3 +1,76 @@
 body{
-    background-color: #23262b;
+    background: linear-gradient( 335deg, #b3d1ff, #ccccff, #ff66ff);
+    color: white;
+    font-family: 'Tajawal', sans-serif;
+    margin: 10px;
+    
+}
+#temperature{
+    margin-top: 20px;
+    margin-left: 30px;
+    float: left;
+    font-size: 180px;
+    
+    background: -webkit-linear-gradient( 135deg, #b3d1ff, #ccccff, #ff66ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#title{
+    text-align: center;
+    font-size: 50px;
+}
+#temperature-information-desc{
+    background: -webkit-linear-gradient( 135deg, #b3d1ff, #ccccff, #ff66ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 24px;
+}
+.temperature-information{
+    margin-left: 55%;
+}
+.temperature-details{
+    float: left;
+    background: -webkit-linear-gradient( 135deg, #b3d1ff, #ccccff, #ff66ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 20px;
+    font-size: 80px;
+}
+.temperature-heads-up{
+    padding: 10px;
+    background-color: rgba(35, 38, 43, 0.7);
+    color: linear-gradient( 335deg, #b3d1ff, #ccccff, #ff66ff);
+    position: fixed;
+    border: 5px solid white;
+    height: calc( 30vh - 20px);
+    width: calc( 40vw - 20px);
+    border-radius: 20px;
+}
+.outfit-title{
+    background-color: rgba(35, 38, 43, 0.7);
+    position: fixed;
+    border: 5px solid #19d1ff;
+    left: calc( 40vw + 30px );
+    height: 15vh;
+    width: calc( 60vw - 50px );
+    border-radius: 20px;
+}
+.outfit-display{
+    background-color: rgba(35, 38, 43, 0.7);
+    position: fixed;
+    border: 5px solid #19d1ff;
+    left: calc( 40vw + 30px );
+    top: calc( 15vh + 30px );
+    height: calc( 85vh - 50px );
+    width: calc( 60vw - 50px );
+    border-radius: 20px;
+}
+.information-heads-up{
+    background-color: rgba(35, 38, 43, 0.7);
+    position: fixed;
+    border: 5px solid #14ff7a;
+    top: calc( 30vh + 30px );
+    height: calc( 70vh - 50px );
+    width: 40vw;
+    border-radius: 20px;
 }

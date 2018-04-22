@@ -7,11 +7,40 @@
             Day fit or weather fit tho (still up for debate)
         </title>
         
+        <link href="https://fonts.googleapis.com/css?family=Tajawal" rel="stylesheet"> 
+        
         <link rel="stylesheet" type="text/css" href="css/style.css" />
         <script src="js/script.js"></script>
     </head>
-    <body>
+    <body onload="load();">
         
+        <div class="temperature-heads-up">
+            <div id="weather-display">
+                <h2 id="temperature">-.-</h2>
+                <p class="temperature-details">ºF</p>
+            </div>
+            <div class="temperature-information">
+                <p id="temperature-information-desc">
+                    Location: null
+                    <br>
+                    <br>
+                    Weather: null
+                    <br>
+                    <br>
+                    Wind Speed: null
+                </p>
+            </div>
+        </div>
         
+        <div class="outfit-title">
+            <h1 id="title"> Are you feeling ... this?</h1>
+        </div>
+        <div class="outfit-display">
+            
+        </div>
+        <div class="information-heads-up">
+        
+        </div>
+
     </body>
 </html>
